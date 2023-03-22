@@ -1,0 +1,114 @@
+/* Ustawienie podstawowych stylów dla całej strony */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Zdefiniowanie szerokości kontenera, który będzie dostosowywał się do szerokości ekranu */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Zdefiniowanie stylów dla elementów, które mają się dostosowywać do szerokości ekranu */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ustawienie reguł CSS dla różnych rozmiarów ekranu */
+  @media screen and (max-width: 767px) {
+    /* Reguły CSS dla małych ekranów */
+    .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Reguły CSS dla średnich ekranów */
+    .container {
+      max-width: 768px;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Reguły CSS dla większych ekranów */
+    .container {
+      max-width: 992px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    /* Reguły CSS dla bardzo dużych ekranów */
+    .container {
+      max-width: 1200px;
+    }
+  }
+body {
+    font-family: Arial; 
+    background-color: rgb(248, 245, 245);
+    padding: 40px 0;
+}
+h2 {
+    font-size: 45px;
+    
+}
+h1 {
+    font-size: 36px;
+    color: rgb(83, 33, 210);
+    
+}
+hr {
+    height: 3px;
+    color: lightblue;
+}
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul {
+    list-style: none;
+}
+header li {
+    margin-bottom: 15px;
+}
+.address-icon {
+    width: 15px;
+    height: 15px;
+    background-color: cornflowerblue;
+    margin-right: 10px;
+    padding: 8px;
+    vertical-align: middle;
+}
+.circle {
+    border-radius: 50%;
+}
+.profile-picture {
+    height:200px;
+    width:200px;
+    border-radius: 25%;
+}
+.roczniki {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.roczniki li {
+    width: 50%;
+}
+a {
+    text-decoration: none;
+}
+.przycisk {
+    border: 5px black;
+    color:brown;
+    padding: 10px, 20px;
+    display:inline-block;
+    margin-top: 15px;
+    
+}
